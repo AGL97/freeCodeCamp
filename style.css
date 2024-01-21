@@ -23,8 +23,17 @@ header
 h1
 {
     font-family: Arial;
-    color: black;
     font-size: 2em;
+}
+
+.claseColor1
+{
+    color:blue;
+}
+
+.claseColor2 
+{
+    color: black;
 }
 
 
@@ -70,6 +79,11 @@ h1
 }
 
 
+}
+
+#photo:hover
+{
+    cursor: pointer;
 }
 
 
