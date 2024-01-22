@@ -2,7 +2,8 @@ let PHOTO = document.getElementById("photo");
 
 /*
 PHOTO.addEventListener("click",function()
-{    
+{  
+      
     if(document.querySelector("header h1").style.color == "black")
     {
         document.querySelector("header h1").style.color = "blue";
@@ -11,18 +12,33 @@ PHOTO.addEventListener("click",function()
     {
         document.querySelector("header h1").style.color = "black";
     }
+
 }) 
 */
 
+/*
 PHOTO.addEventListener("click",function()
 {    
-    if(document.querySelector("header h1").className == "claseColor1")
+    
+    var subt = document.querySelector("header h1");
+    if(subt.classList.contains("claseColor1"))
     {
-        document.querySelector("header h1").className = "claseColor2";
+        subt.classList.remove("claseColor1");
+        subt.classList.add("claseColor2");
     }
     else
     {
-        document.querySelector("header h1").className = "claseColor1";
+        subt.classList.remove("claseColor2");
+        subt.classList.add("claseColor1");
     }
     
+})
+*/
+
+PHOTO.addEventListener("click",function()
+{   
+    
+    var subt = document.querySelector("header h1");
+    subt.classList.toggle("claseColor2");  
+
 })
