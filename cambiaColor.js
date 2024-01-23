@@ -1,4 +1,4 @@
-let PHOTO = document.getElementById("photo");
+let PHOTO = document.querySelector("#photo");
 
 /*
 PHOTO.addEventListener("click",function()
