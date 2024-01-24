@@ -14,7 +14,7 @@ PHOTO.addEventListener("click",function()
 }) 
 */
 
-PHOTO.addEventListener("click",function()
+PHOTO.addEventListener("click",function(e)
 {    
     if(document.querySelector("header h1").className == "claseColor1")
     {
@@ -24,5 +24,6 @@ PHOTO.addEventListener("click",function()
     {
         document.querySelector("header h1").className = "claseColor1";
     }
+    console.log(e.type);
     
 })
